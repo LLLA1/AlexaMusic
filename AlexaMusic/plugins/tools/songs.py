@@ -29,7 +29,7 @@ from AlexaMusic import YouTube, app
 from AlexaMusic.utils.decorators.language import language, languageCB
 from AlexaMusic.utils.formatters import convert_bytes
 from AlexaMusic.utils.inline.song import song_markup
-
+from AlexaMusic.plugins.play.filters import command
 
 @app.on_message(command(["song","/song", "بحث",Nem]) & filters.group & ~BANNED_USERS)
 @language
