@@ -19,7 +19,7 @@ def remove_if_exists(path):
     if os.path.exists(path):
         os.remove(path)
         
-lnk= "https://t.me/" +config.CHANNEL_LINK
+lnk= "https://t.me/" +config.SUPPORT_CHANNEL
 @app.on_message(command(["song","/song", "بحث"]))
 async def song_downloader(client, message: Message):
     query = " ".join(message.command[1:])
@@ -72,7 +72,7 @@ ydl_ops = {
             [
                 [
                     InlineKeyboardButton(
-                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK),
+                        text="𝐒𝐨𝐮𝐫𝐜𝐞 𝐋𝐨𝐋🧚‍♀", url=config.SUPPORT_CHANNEL),
                 ],
 
             ]
