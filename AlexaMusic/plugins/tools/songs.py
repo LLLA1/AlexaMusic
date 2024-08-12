@@ -30,9 +30,6 @@ from AlexaMusic.utils.decorators.language import language, languageCB
 from AlexaMusic.utils.formatters import convert_bytes
 from AlexaMusic.utils.inline.song import song_markup
 
-# Command
-SONG_COMMAND = get_command("SONG_COMMAND")
-
 
 @app.on_message(command(["song","/song", "بحث",Nem]) & filters.group & ~BANNED_USERS)
 @language
