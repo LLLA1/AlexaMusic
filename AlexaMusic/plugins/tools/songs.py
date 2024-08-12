@@ -31,7 +31,7 @@ from AlexaMusic.utils.formatters import convert_bytes
 from AlexaMusic.utils.inline.song import song_markup
 from AlexaMusic.plugins.play.filters import command
 
-@app.on_message(command(["song","/song", "بحث",Nem]) & filters.group & ~BANNED_USERS)
+@app.on_message(command(["song","/song", "بحث"]) & filters.group & ~BANNED_USERS)
 @language
 async def song_commad_group(client, message: Message, _):
     upl = InlineKeyboardMarkup(
