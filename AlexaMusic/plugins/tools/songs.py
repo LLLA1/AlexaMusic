@@ -50,7 +50,7 @@ async def song_commad_group(client, message: Message, _):
 # Song Module
 
 
-@app.on_message(filters.command(SONG_COMMAND) & filters.private & ~BANNED_USERS)
+@app.on_message(command(["song","/song", "بحث"]) & filters.private & ~BANNED_USERS)
 @language
 async def song_commad_private(client, message: Message, _):
     await message.delete()
